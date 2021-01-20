@@ -1,0 +1,93 @@
+
+
+table.cagestil {
+    border: 1px solid black;
+    table-layout: fixed;
+    /*width: 600px;*/
+    border-collapse: collapse;
+  }
+
+.cagestil td{
+    /*border: 1px solid black;*/
+
+    color:black;
+    text-align: center;
+    padding: 0px;
+    width: 20px;
+    height: 20px;
+    border-collapse: collapse;
+    
+  }
+
+
+  .imgstyle
+  {
+   margin: -2px;
+   border: none;
+  }
+
+  select, input{
+  display: block;
+
+  }
+  input{
+    width: 95%;
+  }
+
+
+  button{
+    margin-top: 10px;
+    padding: 20px;
+    width: 200px;
+  }
+
+.cageForma{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px;
+  
+}
+  .cage1Forma, .cage2Forma{
+    display: inline;
+    margin:20px;
+    padding : 20px;
+    background-color: #ebbc3b;
+    box-shadow: 5px 10px #888888;
+  }
+
+  .kontejnerForma{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: darksalmon;
+    border-bottom: 2px solid black;
+  }
+
+ .kontejnerForma h1{
+   border-bottom: 1px solid black;
+    padding: 5px;
+  }
+
+  .kontejnerForma h1 img{
+    width: 30px;
+     height: 30px;
+     margin-bottom: -7px;
+  }
+
+  .myBody{
+    padding-top: 20px;
+    display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   background-color:  	 #e6e6e6;
+   
+  }
+
+  .izbor{
+    display: inline;
+    width: auto;
+  }
+  
+
