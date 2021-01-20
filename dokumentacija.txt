@@ -1,0 +1,34 @@
+Ime aplikacije: Snake
+
+Ovo je aplikacija koja simulira čuvanje zmija.
+
+Pri otvaranju stranice u header-u vidimo podešavanja aplikacije.
+Podešavanja:
+	-Forma za kreiranje novog kaveza na stranici, unosimo dimenzije i ime.
+	-Forma za dodavanje zmije, biramo boju u "Color Picker"-u, može biti bilo koja iz RGB opsega, dužinu i kavez u koji dodajemo.
+	-Froma za brisanje kaveza ili zmije, zavisno od čekirane opcije, kavez kao i zmija se biraju iz padajućeg menija.
+	-Forma za izmenu kaveza, biramo kavez i postavljamo nove dimenzije.
+
+
+Ispod podešavanja se prikazuju kavezi sa zmijama u njima. 
+Možemo videti da je kavez podrazumevno uokviren blokovima.
+Opcije kaveza:	
+	-Prevlačenjem kursora preko kaveza, na mogućim poljima za izmenu se prikazuje crni kvadratić.
+	-Ukoliko je prikazan crni kvadratić:
+		-Pritiskom na levi taster miša postavljamo zid.
+		-Pritiskom na desni taster miša postaljamo jabuku.(Više reči o tome u odeljku za zmiju)
+	-Ukoliko postavimo kursor na zid koji smo postavili u kavezu vidimo + kursor, levim klikom na mišu uništavamo isti.
+
+
+U svakom kavezu će se prikazati sve zmije koje sadrži.
+	-Zmija može biti proizvoljne boje iz RGB opsega.
+	-Zmija se upravlja automatski proveravajući validnost narednih N pozicija, N-dužina zmije. Ovo joj omogućava da bira pozicije
+	 takve da se ne umrsi ili zaglavi u delu zida gde ne može da prođe.(Zbog dubine provere postoje izuzetci kada se može zaglaviti)
+	-Ukoliko jabuka nije postavljena u kavez, zmija se kreće nasumično.
+	-Ukoliko postavimo jabuku, sve zmije će tražiti najkraću putanju da dođu do nje i pojedu je, pritom će prioritet biti da se ne
+	 zaglave.
+
+Putem Web API-a je realizovana komunikacija sa bazom.
+Na bazi se pamte podaci o kavezima, kreiranim zidovima u njima i svim zmijama koje poseduju.
+Trenutna pozicija zmija se ne pamti jer nije od značaja, zmije idu nasumično.
+
